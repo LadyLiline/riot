@@ -12,12 +12,20 @@
 <p>My message: </p>
 	<script>
 		
-		var initData = JSON.parse('<%-JSON.stringify(body)%>');
-		alert("hi " + initData);
-		$.get("/search", function (string) {
+		//var initData = body;
+	
+		$.ajax({
+			  url: '/',
+			  complete: function(data) {
+			    console.log(data);
+			    alert(data);
+		  }
+		});
+
+		/*$.get("/search", function (string) {
 			alert("load performed");
 
-		})
+		})*/
 	</script>
 	
 </body>

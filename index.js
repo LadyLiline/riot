@@ -19,24 +19,16 @@ app.set("view engine", "ejs"); //tell express we're using EJS
 console.log("Hello World " + api);
 
 app.get('/', function(req, res) {
-	apicall(res);
- 	
-});
-
-app.post('/search', function(req,res){
-
-})
-
-
-function apicall(res){
-
-	 request(url, function(error,response,body) {
+	request(url, function(error,response,body) {
 	if (!error && response.statusCode==200){
-		console.log('body ' + body);
+		//console.log('body ' + body);
 		res.render("index", body);
+		
 	}
 })
-}
+});
+
+
 
 
 app.listen(3001)
