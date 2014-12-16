@@ -9,17 +9,15 @@
 </head>
 
 <body>
-	DEV KEY
-	<br />
-	<input id="theKey" />
-	<br />Summoner Name
-	<br />
-	<input id="userName" />
-	<input type="submit" onclick="summonerLookUp();" />
-	<br />
-	<br />Summoner Level: <span id="sLevel"></span>
 
-	<br />Summoner ID: <span id="sID"></span>
+	<script>
+		alert("hi");
+		$.get("/getSona", function (string) {
+			alert("load performed");
+
+		})
+	</script>
+	
 </body>
 
 </html>
