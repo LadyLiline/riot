@@ -12,12 +12,14 @@
 <p>My message: </p>
 	<script>
 		
-		//var initData = body;
+
 	
 		$.ajax({
 			  url: '/',
 			  complete: function(data) {
-			    console.log(data);
+			    console.log('data client : ' + data);
+	
+		var jsonObject = <%= JSON.stringify(data) %>;
 			    alert(data);
 		  }
 		});

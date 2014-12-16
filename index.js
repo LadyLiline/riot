@@ -22,7 +22,10 @@ app.get('/', function(req, res) {
 	request(url, function(error,response,body) {
 	if (!error && response.statusCode==200){
 		//console.log('body ' + body);
-		res.render("index", body);
+
+		console.log(body);
+
+		res.render("index.ejs", body);
 		
 	}
 })
