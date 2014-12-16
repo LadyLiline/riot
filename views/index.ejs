@@ -9,10 +9,12 @@
 </head>
 
 <body>
-
+<p>My message: </p>
 	<script>
-		alert("hi");
-		$.get("/getSona", function (string) {
+		
+		var initData = JSON.parse('<%-JSON.stringify(body)%>');
+		alert("hi " + initData);
+		$.get("/search", function (string) {
 			alert("load performed");
 
 		})

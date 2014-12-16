@@ -1,7 +1,22 @@
 {
-  "name": "hello"
-, "version": "0.0.1"
-, "dependencies": {
-    "express": "latest"
-  }
+  "name": "riot",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "^4.10.6"
+  },
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LadyLiline/riot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LadyLiline/riot/issues"
+  },
+  "homepage": "https://github.com/LadyLiline/riot"
 }
