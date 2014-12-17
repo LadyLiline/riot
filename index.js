@@ -11,7 +11,7 @@ var app = express();
 //Set the view directory to /views
 //app.set("views", __dirname + "/views");
 //app.set("view engine", "ejs"); //tell express we're using EJS
-
+//s
 
 //use jade templating language
 /*app.set("view engine", "jade");*/
