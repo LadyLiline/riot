@@ -2,9 +2,12 @@ var express = require("express");
 var request = require('request');
 var fs = require('fs');
 
+
 var api = '633cbe7f-4b19-41eb-8d57-c13d04b85b71';
 
 var url = 'https://na.api.pvp.net/api/lol/static-data/na/v1.2/champion/37?champData=skins&api_key='+api;
+
+//https://na.api.pvp.net/api/lol/static-data/na/v1.2/champion/37?champData=skins&api_key=633cbe7f-4b19-41eb-8d57-c13d04b85b71
 
 var app = express();
 
@@ -30,7 +33,7 @@ app.get('/index', function(req, res) {
 });
 
 app.get('/call', function(req, res) {
-	request(url, function(error,response,body) {
+	request({'url':url, 'proxy':'http://pac.tsl.telus.com:8080'}, function(error,response,body) {
 	if (!error && response.statusCode==200){
 		//console.log('body ' + body);
 
